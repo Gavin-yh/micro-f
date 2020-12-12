@@ -3,7 +3,6 @@
  * eg. feat: xxxxx
  */
 // build：主要目的是修改项目构建系统(例如 glup，webpack，rollup 的配置等)的提交
-// ci：主要目的是修改项目继续集成流程(例如 Travis，Jenkins，GitLab CI，Circle等)的提交
 // docs：文档更新
 // feat：新增功能
 // merge：分支合并 Merge branch ? of ?
@@ -21,7 +20,19 @@ module.exports = {
     "type-enum": [
       1,
       "always",
-      ["feat", "fix", "docs", "style", "refactor", "test", "chore", "revert"]
+      [
+        "build",
+        "docs",
+        "feat",
+        "merge",
+        "fix",
+        "perf",
+        "refactor",
+        "style",
+        "test",
+        "revert",
+        "chore"
+      ]
     ],
     "subject-full-stop": [0, "never"],
     "subject-case": [0, "never"]
