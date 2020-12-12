@@ -1,5 +1,27 @@
-import { ElButton } from "element-plus";
+import {
+  ElButton,
+  ElSubmenu,
+  ElMenu,
+  ElMenuItem,
+  ElMenuItemGroup,
+  ElCol,
+  ElRow,
+  ElContainer,
+  ElAside,
+  ElMain
+} from "element-plus";
 
-const ElComponent = [ElButton];
+const ElComponent = [
+  ElButton,
+  ElSubmenu,
+  ElMenu,
+  ElMenuItem,
+  ElMenuItemGroup,
+  ElCol,
+  ElRow,
+  ElContainer,
+  ElAside,
+  ElMain
+];
 
 export default ElComponent;
