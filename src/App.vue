@@ -1,7 +1,5 @@
 <template>
   <div class="nav">
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
     <el-container>
       <el-aside class="nav-aside">
         <el-menu
@@ -12,17 +10,19 @@
           active-text-color="#ffd04b"
         >
           <el-menu-item
-            v-for="route in this.$router.options.routes"
-            :key="route.key"
-            :index="route.path"
+            v-for="menu in menus"
+            :key="menu.key"
+            :index="menu.path"
           >
             <i class="el-icon-menu"></i>
-            <template #title>{{ route.name }}</template>
+            <template #title>{{ menu.title }}</template>
           </el-menu-item>
         </el-menu>
       </el-aside>
       <el-main class="nav-main">
-        <router-view />
+        <router-view v-show="$route.name" />
+
+        <div v-show="!$route.name" id="frame" />
       </el-main>
     </el-container>
   </div>
@@ -30,7 +30,24 @@
 
 <script>
 export default {
-  setup() {}
+  setup() {
+    const menus = [
+      {
+        key: "Home",
+        title: "主页",
+        path: "/home"
+      },
+      {
+        key: "VueMicroApp",
+        title: "Vue 主页",
+        path: "/vue"
+      }
+    ];
+
+    return {
+      menus
+    };
+  }
 };
 </script>
 
@@ -50,6 +67,7 @@ export default {
 
 .nav-aside /deep/ .el-menu {
   border: none;
+  text-align: left;
 }
 
 .nav-main {

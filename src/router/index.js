@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+// import About from "../views/About.vue";
 
 import createMenu from "@/helper/menu";
 
@@ -10,12 +10,6 @@ const { menus } = createMenu([
     name: "Home",
     title: "首页",
     component: Home
-  },
-  {
-    path: "/about",
-    name: "about",
-    title: "为引用",
-    component: About
   }
 ]);
 

@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import components from "@/helper/element-plus";
 import "normalize.css";
+import startMicro from "./micro";
 
 const app = createApp(App);
 
@@ -15,3 +16,5 @@ app
   .use(store)
   .use(router)
   .mount("#app");
+
+startMicro();
