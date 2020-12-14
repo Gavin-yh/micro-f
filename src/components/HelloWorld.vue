@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>hello gavin</h1>
+    <h1>hello gavin(这是主应用的主页)</h1>
   </div>
 </template>
 

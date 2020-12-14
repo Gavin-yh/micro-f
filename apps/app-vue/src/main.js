@@ -13,11 +13,10 @@ let instance = null;
 let router = null;
 
 
-function render(props) {
+function render() {
   // 在 render 中创建 VueRouter，可以保证在卸载微应用时，移除 location 事件监听，防止事件污染
   router = getRouter()
-  console.log(props)
-  // debugger
+
   // 挂载应用
   instance = createApp(App)
 

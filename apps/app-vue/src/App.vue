@@ -1,7 +1,4 @@
 <template>
-  <router-link to="/vue/home">home</router-link>
-  <router-link to="/vue/about">about</router-link>
-
   <router-view />
 </template>
 

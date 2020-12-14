@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 
 const routes = [
-    {
+  {
     path: "/vue/home",
     title: "vue 首页",
     component: Home

@@ -8,7 +8,8 @@ import {
   ElRow,
   ElContainer,
   ElAside,
-  ElMain
+  ElMain,
+  ElDrawer
 } from "element-plus";
 
 const ElComponent = [
@@ -21,7 +22,8 @@ const ElComponent = [
   ElRow,
   ElContainer,
   ElAside,
-  ElMain
+  ElMain,
+  ElDrawer
 ];
 
 export default ElComponent;
